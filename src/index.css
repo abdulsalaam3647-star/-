@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-amiri: "Amiri", "Scheherazade New", serif;
+  --font-cairo: "Cairo", system-ui, sans-serif;
+  --font-ruqaa: "Aref Ruqaa", serif;
+}
+
+body {
+  font-family: var(--font-cairo);
+}
+
+.font-serif-arabic {
+  font-family: var(--font-amiri);
+}
+
+.font-ruqaa-arabic {
+  font-family: var(--font-ruqaa);
+}
+
+/* Poetic bayt alignment */
+.poetry-verse {
+  line-height: 2.3;
+  letter-spacing: 0.01em;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 113, 108, 0.5);
+}
